@@ -95,6 +95,11 @@
 	.section-padding {
 		padding: 40px 0px;
 	}
+
+	.main-heading {
+		font-size: 50px;
+		line-height: 60px;
+	}
 	
 	/* END common section */
 
@@ -109,12 +114,12 @@
 	.nav-desc-menu{
 		display: none;
 	}
-	.menu a {
+	/* .menu a {
 		font-size: 25px;
-        color: #ffffff;
+        color: #fff;
         width: 100%;
-		border-bottom: 1px solid #3a3a3a;
-    }
+		border-bottom: 1px solid #ffffff1a;
+    } */
 
 	.right-nav-top {
 		padding: 10px 0 10px 15px;
@@ -182,13 +187,13 @@
 	a.menu-toggle.active span:before {
 		top: 0;
 		transform: rotate(-45deg);
-		background-color: #f3ce46;
+		background-color: #99ca40;
 	}
 
 	a.menu-toggle.active span:after {
 		bottom: 0;
 		transform: rotate(45deg);
-		background-color: #f3ce46;
+		background-color: #99ca40;
 	}
 
 	.menu {
@@ -199,7 +204,7 @@
 		width: 100%;
 	}
 	.menu a {
-		color: #9b9b9b;
+		color: #fff;
 		font-size: 25px;
 		font-weight: 300;
 		text-decoration: none;
@@ -207,7 +212,8 @@
 		position: relative;
 		overflow: hidden;
 		transition: color 0.3s ease, transform 0.3s ease;
-		border-bottom: 1px solid #302f2f;
+		border-bottom: 1px solid #ffffff17;
+		display: block;
 	}
 	.menu-open {
 		color: #000;
@@ -227,7 +233,7 @@
 		left: -100%;
 		width: 100%;
 		height: 100vh;
-		background: #000000;
+		background: linear-gradient(135deg, #0b3d2e, #0f2c24);
 		top: 0;
 		z-index: 8;
 	}
@@ -283,58 +289,6 @@
 	}
 	/* END nav Stying for small screens */
 
-	.faq-header {
-		margin-bottom: 2rem;
-	}
-	.qt h2 {
-		max-width: 60%;
-	}
-
-	.cta-inner {
-		top: -50px;
-	}
-	.cta-text h2 {
-  		font-size: 25px;
-	}
-	.cta-btn a {
-  		padding: 10px 25px;
-	}
-	.compare-plans button {
-		font-size: 14px;
-		padding: 8px 15px;
-	}
-
-	/* pricing table */
-	.table-head-overview,
-	.table-head-inner {
-  		font-size: 18px;
-		line-height: 20px;
-		word-break: break-all;
-	}
-	.table-head th span {
-		font-size: 14px;
-	}
-	.right-table-head {
-		width: 35px;
-		height: 35px;
-	}
-	.right-table-head svg {
- 		 width: 12px;
-	}
-
-	.pt-150{
-		padding-top: 100px !important;
-	}
-
-	.banner-img img {
-		max-height: 350px;
-	}
-	.feature {
-		margin-bottom: 20px;
-	}
-	.feature.center {
-		padding-left: initial;
-	}
 
 }
 
@@ -342,14 +296,8 @@
 	.hero-banner h1 {
 		font-size: 32px;
 	}
-	.hero-banner .subtitle {
-		font-size: 14px;
-	}
-	.cta-button {
-		padding: 12px 30px;
-		font-size: 14px;
-	}
 
+	/* -- common area -- */
 	.second-btn,
 	.login-btn {
     	font-size: 14px;
@@ -358,163 +306,24 @@
 	.login-btn img {
 		width: 22px;
 	}
-
-	.hero-banner h1 {
-    	font-size: 35px;
-	}
-
-	.ft-newsletter {
-  		display: block;
-	}
-	.left-ft-newsletter{
-		margin-bottom: 20px;
-	}
-
-	.cta-inner {
-		display: block;
-		text-align: center;
-	}
-	.cta-text h2 {
-		margin-bottom: 25px;
-	}
-	.cta-text h2 br {
-		display: none;
-	}
-	.pricing {
-		padding-bottom: 150px !important;
-	}
-	.cta-inner {
-  		padding: 25px 25px;
-	}
-  
-	.footer {
-  		padding: 40px 0 0px;
-	}
-
-	.right-book-session-item .icon {
-		width: 50px;
-		height: 50px;
-		padding: 10px;
-	}
-
-	.signup{
-		padding-top: 40px;
-	}
-	.signup-form-in {
-		box-shadow: none;
-		padding: 20px;
-	}
-	.right-login-form{
-		order: -1;
-	}
-	.login-form-in {
-		padding: 40px 40px 40px 40px;
-		margin: 0;
-		min-height: initial;
-	}
-
-	.faq-header h3 {
-		font-size: 2rem;
-	}
-
-	.right-faq .accordion-button {
-		padding: 1.2rem 1.5rem;
-		font-size: 1rem;
-	}
-
-	.book-session {
-		padding-left: 15px;
+	.main-heading {
+		font-size: 35px;
+		line-height: 45px;
 	}
 
 }
 
 @media (max-width: 700px) {
-	/* pricing */
-	.table-head th {
-		display: contents;
-	}
-	.table-head,
-	.sticky-table th {
-  		position: unset;
-	}
-	.compare-overview .category-header th {
-  		font-size: 16px;
-	}
-	.compare-overview .feature-name {
-  		font-size: 14px;
-	}
-	.table-head-inner {
-  		border-radius: 0;
-	}
+
 
 }
 
 @media (max-width: 600px) {
-	.mob-btn a {
-		color: #000;
-		transition: color 0.3s ease, transform 0.3s ease;
-	}
 	.header-img {
 		width: 70px;
 	}
-	.right-nav-top .desc-btn{
-		display: none;
-	}
-	.right-nav-top .mob-btn{
-		display: block;
-		padding: 16px 6vw;
-	}
-	.second-btn, .login-btn {
-        font-size: 20px;
-        padding: 12px 30px;
-    }
-	.second-btn{
-		background-color: #F3CE46;
-	}
 	.menu a {
-        font-size: 20px;
-	}
-
-	.faq-header h3, .client-header h2 {
-		font-size: 30px;
-		line-height: 35px;
-	}
-	.testimonial-outr .hero-text h1 {
-		margin-top: 40px;
-	}
-	.testim-icon {
-  		font-size: 60px;
-	}
-	.faq-header h6 {
-		font-size: 16px;
-		margin-bottom: 5px;
-	}
-
-	.otp-wrapper {
-		padding: 25px 15px;
-	}
-	.otp-wrapper .otp-box {
-		padding: 30px 15px;
-	}
-	.otp-wrapper .otp-inputs input {
-		width: 45px;
-		height: 45px;
-	}
-	.otp-wrapper .otp-inputs {
-		gap: 5px;
-	}
-
-	.otp-wrapper h3 {
-		font-size: 20px;
-	}
-
-	.option-card .icon img {
-		width: 40px;
-		height: 40px;
-	}
-
-	.main-btn img{
-		width: 18px;
+        font-size: 18px;
 	}
 
 	.close-btn,
@@ -523,60 +332,22 @@
   		font-size: 14px;
 	}
 
+	.login-btn{
+		display: block;
+		width: fit-content;
+		margin-bottom: 15px;
+	}
 	.description {
 		font-size: 16px;
 		line-height: 22px;
 	}
 
-	.head-title h1,
-	.head-title h2 {
-		font-size: 25px;
-	}
-	.head-title p {
-		font-size: 16px;;
-		line-height: 22px;
+	.main-heading {
+		font-size: 30px;
+		line-height: 40px;
 	}
 
-	.floating-label {
-		margin-bottom: 15px;
-	}
-
-	.login-form-in {
-    	padding: 15px;
-	}
-	.login-form-in ul li button {
-  		font-size: 16px;
-	}
-
-	/* pricing table */
-	.table-head-overview,
-	.table-head-inner {
-  		font-size: 14px;
-	}
-
-	.brochure-request-demo-outr .modal-content {
-		border-radius: 15px;
-		padding: 20px;
-	}
-	.brochure-request-demo-head h4 {
-    	font-size: 20px;
-	}
-
-	.right-faq .accordion-button {
-        padding: 0;
-		line-height: 23px;
-	}
-	.right-faq .accordion-body{
-		padding: 0 0 15px 0;
-	}
-
-	.pricing {
-        padding-bottom: 100px !important;
-    }
-
-	.card-swiper-outr{
-		padding: 40px 0;
-	}
+	
 
 }
 
@@ -585,29 +356,6 @@
 		font-size: 30px;
 	}
 
-	.hero-banner .subtitle {
-  		margin: 0 auto 20px;
-		max-width: 100%;
-	}
-	.hero-banner h1 {
-		margin-bottom: 10px;
-	}
-
-	.signup-in-img{
-		display: none;
-	}
-	.signup-form-in {
-		padding: 20px;
-	}
-
-	.dowload-outr .modal-dialog-centered {
-		margin-left: 0;
-		margin-right: 0;
-		max-width: 100%;
-	}
-
-	.footer-nav{
-		margin-top: 20px;
-	}
+	
 
 }
