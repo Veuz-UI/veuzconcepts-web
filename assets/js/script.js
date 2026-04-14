@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
         items: 2,
       },
       600: {
-        items: 2,
+        items: 5,
       },
       1200: {
         items: 3,
@@ -178,7 +178,7 @@ $(document).ready(function(){
 });
 
 
-// ai real world impact slider
+// product-slider
 var owl = $('.product-slider').owlCarousel({
       loop:true,
       margin:10,
