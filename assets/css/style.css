@@ -15,7 +15,7 @@ html {
 
 body {
 	font-family: "Montserrat", sans-serif;
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 	/* cursor: none; */
   background-color: #EFF3F4;
 }
@@ -1450,3 +1450,419 @@ header.fixed-to-top .main-header-in{
   font-weight: 500;
 }
 /* ------------- END home contact ------------- */
+
+
+
+
+/* ------------- Inner About Section ------------- */
+
+.vision-section {
+  padding: 60px 20px;
+  background: #f1f3f2;
+}
+
+/* LEFT BOX */
+.vision-box {
+  background: linear-gradient(135deg, #0d2d26, #123f35);
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.vision-box h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* RIGHT CONTENT */
+.vision-content {
+  padding-left: 40px;
+}
+
+.vision-label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.vision-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.vision-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ========================= */
+/* 🔥 RESPONSIVE */
+/* ========================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .vision-content {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .vision-box {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .vision-box {
+    padding: 25px;
+    border-radius: 16px;
+  }
+
+  .vision-box h3 {
+    font-size: 22px;
+  }
+
+  .vision-content h2 {
+    font-size: 26px;
+  }
+
+  .vision-content p {
+    font-size: 13px;
+  }
+}
+
+
+.inner-about-section-image{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.inner-about-section-image img{
+    object-fit: cover;
+}
+
+
+.stats-section {
+  padding: 60px 0px;
+  background: #e9ecef;
+}
+
+
+.stats {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.stat {
+  padding: 20px 10px;
+  transition: 0.3s ease;
+}
+
+
+.stat h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+
+.stat p {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: #666;
+  margin-top: 5px;
+}
+
+
+.stat.active h2 {
+  transform: scale(1.15);
+  color: #0d2d26;
+}
+
+
+.stat:hover h2 {
+  transform: scale(1.1);
+}
+
+.stats .col-lg-3 {
+  text-align: center;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .stat h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stat {
+    padding: 15px 0;
+  }
+
+  .stat h2 {
+    font-size: 26px;
+  }
+
+  .stat p {
+    font-size: 11px;
+  }
+}
+
+.text {
+  padding-left: 30px;
+}
+
+.text p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.card-wrapper {
+  background: #0d2d26;
+  color: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  border: none;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.card-item:last-child {
+  margin-bottom: 0;
+}
+
+.card-item span {
+  min-width: 52px;
+  height: 32px;
+  background: #1f5f4f00;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+
+.card-item strong {
+  font-size: 14px;
+}
+
+.card-item div {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 992px) {
+
+  .text {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+  .inner-about-section-image {
+    text-align: center;
+  }
+
+  .inner-about-section-image img {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .card-wrapper {
+    padding: 18px;
+  }
+
+  .card-item {
+    gap: 10px;
+  }
+
+  .card-item span {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .card-item div {
+    font-size: 12px;
+  }
+}
+/* ------------- Inner About Section ------------- */
+
+/* ------------- Values Section ------------- */
+.values-section {
+  padding: 60px 0px;
+  background: #eef1ef;
+}
+
+.values-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.values-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.values-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.value-card {
+  background: linear-gradient(135deg, #0d2d26, #123f35);
+  color: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  height: 100%;
+  transition: 0.4s ease;
+  position: relative;
+}
+
+.value-card::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #7dd3a0;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.value-card h5 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.value-card p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #dcdcdc;
+  margin-top: 10px;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.value-img img {
+  width: 100%;
+  border-radius: 18px;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 992px) {
+  .values-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .values-title {
+    font-size: 24px;
+  }
+
+  .values-desc {
+    margin-top: 10px;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+
+  .value-card h5 {
+    font-size: 16px;
+  }
+
+  .value-card p {
+    font-size: 12px;
+  }
+}
+
+/* ------------- Values Section ------------- */
+
+
+/* ------------- Client Section ------------- */
+
+
+.client-section {
+  background: #eef1ef;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.client-title {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* CARD */
+.client-item {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  transition: 0.3s ease;
+}
+
+/* IMAGE */
+.client-item img {
+  max-height: 100px;
+  width: auto;
+  opacity: 0.7;
+  transition: 0.3s ease;
+  filter: grayscale(1);
+}
+
+/* HOVER */
+.client-item:hover {
+  border-color: #0d2d26;
+  background: #fff;
+}
+
+.client-item:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+  filter: none;
+}
+
+/* ------------- Client Section ------------- */

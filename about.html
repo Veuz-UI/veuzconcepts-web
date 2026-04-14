@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veuz Concepts</title>
+  <meta name="title" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.webp">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- loader -->
+  <!-- <div class="loader" id="loader">
+    
+  </div> -->
+  <!-- loader -->
+
+  <header>
+    <!-- nav header -->
+    <div class="main-header">
+      <div class="width-container">
+        <div class="main-header-in">
+          <!-- header logo-->
+          <div class="header-img">
+            <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+          </div>
+
+          <!-- header nav icons -->
+          <div class="nav-desc-menu">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="#">Veuz</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Insights</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="right-nav-top">
+            <!-- <div class="wrap desc-btn">
+              <a class="second-btn" href="login.html">
+                Login <img src="assets/img/person.png" class="img-fluid" alt=""> </a>
+            </div> -->
+            <div class="wrap desc-btn">
+              <a data-bs-toggle="modal" data-bs-target="#exampleModalCenter2" class="login-btn">Let’s Talk</a>
+            </div>
+
+            <div class="menu-outr">
+              <div class="middle">
+                <a href="" class="menu-toggle two"><span></span></a>
+              </div>
+              <div class="nav-container">
+                <nav class="menu">
+                  <div class="menu__item">
+                    <a href="index.html" class="menu__item-link active">Home</a>
+                  </div>
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Veuz</a>
+                  </div>
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Services</a>
+                  </div>
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Products</a>
+                  </div>
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Portfolio</a>
+                  </div>
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Insights</a>
+                  </div>
+                  <div class="menu__item">
+                    <a href="#" class="menu__item-link">Contact Us</a>
+                  </div>
+                </nav>
+                <div class="wrap mob-btn">
+                  <a href="login.html#signup" class="second-btn">Signup for free trial</a>
+                </div>
+                <div class="wrap mob-btn">
+                  <a class="login-btn" href="login.html">
+                    Login <img src="assets/img/person.png" class="img-fluid" alt=""></a>
+                </div>
+                <div class="socials">
+                  <div class="social-links">
+                    <!-- LinkedIn -->
+                    <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
+                          stroke-width="2" />
+                        <rect x="2" y="9" width="4" height="12" stroke-width="2" />
+                        <circle cx="4" cy="4" r="2" stroke-width="2" />
+                      </svg>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="#" target="_blank" class="social-link" aria-label="X">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7.1L4.4 22H1.2l8.1-9.2L1 2h7l4.9 6.5L18.9 2z" />
+                      </svg>
+                    </a>
+                    <!-- Insta -->
+                    <a href="#" target="_blank" class="social-link" aria-label="Instagram">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2" />
+                        <circle cx="12" cy="12" r="4" stroke-width="2" />
+                        <circle cx="17.5" cy="6.5" r="1.5" stroke-width="2" />
+                      </svg>
+                    </a>
+                    <!-- fb -->
+                    <a href="#" target="_blank" class="social-link" aria-label="Facebook">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- ABOUT inner about  -->
+  <section class="section-padding">
+    <div class="width-container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3 class="main-heading">
+            About Us
+          </h3>
+          <p class="description">In a landscape where new IT solutions are constantly emerging, we at Veuz stand out by
+            delivering truly unique, future-ready solutions that scale with your business. This distinct approach has
+            positioned us as a leading custom software development company and a trusted partner for website and app
+            development, serving clients worldwide.</p>
+          <p class="description mb-4">Offering a complete range of technical services from ERP solutions, CRM systems,
+            and
+            ZATCA e-invoicing compliance to custom app development and enterprise-grade software solutions, Veuz
+            Concepts ensures you a smooth and efficient digital transformation journey.</p>
+
+          <div>
+            <a href="#" class="main-btn"> Know More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="inner-about-section-image">
+            <img src="assets/img/about-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT inner about  -->
+
+
+  <div class="row vision-section align-items-center justify-content-center">
+
+    <!-- LEFT BOX -->
+    <div class="col-lg-5">
+      <span class="vision-label">• Our Vision</span>
+      <div class="vision-box">
+        <h3>
+          Your Complete Solution For All Your Website And Software Needs
+        </h3>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="col-lg-5">
+      <div class="vision-content">
+        <h2>From Vision To Reality</h2>
+        <p>
+          We got you! At Veuz Concepts, we don’t just imagine the future; we shape it. At the crossroads
+          of creativity and technology, we go beyond standard practices to provide innovative solutions
+          that advance your business to new levels of success, driven by passion and precision to turn
+          bold ideas into impactful realities that resonate with your audience, while offering a seamless
+          blend of strategy, design, and technology that fuels lasting growth.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Counter section  -->
+  <section class="stats-section" id="statsSection">
+    <div class="width-container">
+      <div class="row stats">
+
+        <div class="col-lg-3 col-md-6 stat">
+          <h2 data-target="534">0</h2>
+          <p>HAPPY CUSTOMERS</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 stat">
+          <h2 data-target="16">0</h2>
+          <p>YEARS OF EXPERIENCE</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 stat">
+          <h2 data-target="350">0</h2>
+          <p>EMPLOYEES</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 stat">
+          <h2 data-target="8">0</h2>
+          <p>BRANCHES</p>
+        </div>
+
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="inner-about-section-image">
+            <img src="assets/img/about-img.png" alt="">
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="text">
+            <p>
+              Our custom web and mobile app development services are built with the purpose of optimizing operations,
+              enhancing performance, and strengthening the digital presence of your business. Backed by globally
+              recognized
+              certifications including ISO 9001, ISO 27001, and GDPR compliance, we deliver development standards you
+              can
+              trust.
+            </p>
+
+            <div class="card-wrapper">
+              <div class="card-item">
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+                <div>
+                  <strong>Our Promise:</strong><br>
+                  Delivering reliable solutions that drive business success.
+                </div>
+              </div>
+
+              <div class="card-item">
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+                <div>
+                  <strong>Our Mission:</strong><br>
+                  Empowering growth through technology-driven solutions.
+                </div>
+              </div>
+
+              <div class="card-item">
+                <span><i class="fa-solid fa-arrow-right"></i></span>
+                <div>
+                  <strong>Our Vision:</strong><br>
+                  Shaping a smarter future through continuous innovation.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <div class="values-section">
+    <div class="width-container">
+      <div class="row mb-4">
+        <div class="col-lg-6">
+          <span class="values-label">• Our Values</span>
+          <h2 class="values-title">What Drives Us Forward</h2>
+        </div>
+
+        <div class="col-lg-6">
+          <p class="values-desc">
+            We got you! At Veuz Concepts, we don’t just imagine the future; we shape it.
+            At the crossroads of creativity and technology, we go beyond standard practices
+            to provide innovative solutions that advance your business to new levels of success.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="value-card">
+            <h5>Customer First</h5>
+            <p>
+              We prioritize your needs, delivering solutions that enhance experience,
+              satisfaction, and long-term success at every stage.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="value-img">
+            <img src="assets/img/about-img.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="value-card">
+            <h5>Innovation</h5>
+            <p>
+              We embrace creativity and technology to build forward-thinking solutions
+              that drive growth and keep you ahead of change.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="value-card">
+            <h5>Reliability</h5>
+            <p>
+              Trust is built on consistency. We deliver high-quality results on time,
+              every time, providing a dependable foundation you can lean on.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="value-card">
+            <h5>Transparency</h5>
+            <p>
+              We believe in open doors and clear communication. From project timelines
+              to pricing, we keep you informed every step of the way.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="value-img">
+            <img src="assets/img/about-img.png" alt="">
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- prof-services -->
+  <section class="section-padding  testimonial">
+    <div class="width-container">
+
+      <div class="testimonial-head">
+        <div class="tag">05 / Client Testimonial</div>
+      </div>
+
+      <div class="owlslider owl-carousel owl-theme testimonial-slider">
+        <div class="item">
+          <div class="testim-content">
+            <h3>
+              "Veuz went above and beyond as our chosen website development
+              company. Their dedication crafting a responsive website with all requested functionalities was
+              exceptional. The result exceeded our expectations!”
+            </h3>
+          </div>
+          <div class="testim-dtls">
+            <div class="testim-img">
+              <img src="assets/img/testim.png" class="img-fluid" alt="aivri">
+            </div>
+            <div class="testim-img-cont">
+              <h6>Mr. Rayid T</h6>
+              <p>MD of Teckwood Crafts Pvt Ltd</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testim-content">
+            <h3>
+              "Veuz went above and beyond as our chosen website development
+              company. Their dedication crafting a responsive website with all requested functionalities was
+              exceptional. The result exceeded our expectations!”
+            </h3>
+          </div>
+          <div class="testim-dtls">
+            <div class="testim-img">
+              <img src="assets/img/testim.png" class="img-fluid" alt="aivri">
+            </div>
+            <div class="testim-img-cont">
+              <h6>Mr. Rayid T</h6>
+              <p>MD of Teckwood Crafts Pvt Ltd</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="testim-content">
+            <h3>
+              "Veuz went above and beyond as our chosen website development
+              company. Their dedication crafting a responsive website with all requested functionalities was
+              exceptional. The result exceeded our expectations!”
+            </h3>
+          </div>
+          <div class="testim-dtls">
+            <div class="testim-img">
+              <img src="assets/img/testim.png" class="img-fluid" alt="aivri">
+            </div>
+            <div class="testim-img-cont">
+              <h6>Mr. Rayid T</h6>
+              <p>MD of Teckwood Crafts Pvt Ltd</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testim-header">
+        <div class="testim-nav">
+          <button class="testim-prev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="testim-next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- client section -->
+  <section class="client-section">
+    <div class="width-container">
+      <p class="client-title">WE ENSURE VALUE FOR OUR CLIENTS</p>
+
+    <div class="owl-carousel client-slider">
+
+      <div class="client-item">
+        <img src="assets/img/client-1.png" alt="">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/img/client-2.png" alt="">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/img/client-3.png" alt="">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/img/client-4.png" alt="">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/img/client-1.png" alt="">
+      </div>
+
+      <div class="client-item">
+        <img src="assets/img/client-2.png" alt="">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- client section -->
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="width-container">
+      <div class="footer-content">
+        <div class="row">
+
+          <!-- site logo -->
+          <div class="col-md-4">
+            <div class="logo-social-icon">
+              <a href="#">
+                <img src="assets/img/logo.png" class="img-fluid" alt="" />
+              </a>
+              <a href="mailto:support@veuzconcepts.com"><i class="fa-regular fa-envelope"></i>
+                support@veuzconcepts.com</a>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="useful-link">
+              <h3>Services</h3>
+              <div class="useful-link-ul-list">
+                <ul>
+                  <li><a href="#">Aramco CCC/CCC+</a></li>
+                  <li><a href="#">Mobile App Development</a></li>
+                  <li><a href="#">Odoo Development</a></li>
+                  <li><a href="#">Website Development</a></li>
+                  <li><a href="#">Microsoft Office 365</a></li>
+                  <li><a href="#">Hosting Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="useful-link">
+              <h3>Product</h3>
+              <div class="useful-link-ul-list">
+                <ul>
+                  <li><a href="#">FlowDesq</a></li>
+                  <li><a href="#">Zatca E-Invoicing</a></li>
+                  <li><a href="#">CRM</a></li>
+                  <li><a href="#">EventXPro</a></li>
+                  <li><a href="#">Touch2Scan</a></li>
+                  <li><a href="#">Study Abroad</a></li>
+                  <li><a href="#">Property Management</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="useful-link">
+              <h3>Resources</h3>
+              <div class="useful-link-ul-list">
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="useful-link">
+              <h3>Area We Served</h3>
+              <div class="useful-link-ul-list">
+                <ul>
+                  <li><a href="#">Saudi Arabia</a></li>
+                  <li><a href="#">UAE</a></li>
+                  <li><a href="#">Qatar</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="useful-link">
+              <h3>Our Office</h3>
+              <div class="useful-link-ul-list">
+                <ul>
+                  <li><a href="#">Head Office</a></li>
+                  <li><a href="#">Saudi Arabia</a></li>
+                  <li><a href="#">Sub Office</a></li>
+                  <li><a href="#">India</a></li>
+                  <li><a href="#">UAE</a></li>
+                  <li><a href="#">Bahrain</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- copywrite start -->
+  <div class="copyrite">
+    <div class="width-container">
+      <div class="copyright-box">
+        <p>
+          Copyright ©2026 Veuz Concepts All Rights Reserved
+        </p>
+
+        <!-- social icon -->
+        <div class="social-icon-list">
+          <div class="icons">
+            <a href="#">
+              <div class="icon-bg">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+            </a>
+            <a href="#">
+              <div class="icon-bg">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </a>
+            <a href="#">
+              <div class="icon-bg">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copywrite end -->
+
+
+  <div class="r-scroll">
+    <a href="#" id="scroll" style="display: none;"><span><i class="fa-solid fa-arrow-up"></i></span></a>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal dowload-outr fade bd-example-modal-lg" id="exampleModalCenter2" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header dowload-head">
+          <div class="dowload-head-in">
+            <h4 class="modal-title" id="exampleModalLongTitle">Request a demo</h4>
+          </div>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="modal-body pt-0">
+          <div class="dowload">
+            <form class="form-wrapper">
+              <div class="floating-label">
+                <input type="text" placeholder=" " required />
+                <label>Name <span class="required">*</span></label>
+              </div>
+
+              <div class="floating-label">
+                <input type="email" placeholder=" " required />
+                <label>Email<span class="required">*</span></label>
+              </div>
+
+              <!-- Phone -->
+              <div class="floating-label">
+                <input type="tel" placeholder=" " inputmode="numeric" pattern="[0-9]*" required />
+                <label>Mobile<span class="required">*</span></label>
+              </div>
+
+              <div class="floating-label">
+                <textarea name="message" rows="4" placeholder=" " required></textarea>
+                <label>Message <span class="required">*</span></label>
+              </div>
+
+              <div class="main-btn-out mt-4 req-brochure-btn">
+                <button type="button" class="close-btn w-100" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                <button type="button" class="main-btn w-100" data-bs-toggle="modal"
+                  data-bs-target="#exampleModalCenter3">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Modal -->
+
+
+  <!-- request brochure success message -->
+  <div class="modal brochure-request-demo-outr fade bd-example-modal-lg" id="exampleModalCenter3" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header brochure-request-demo-head">
+
+          <div class="brochure-request-demo-head-in">
+            <div class="success-checkmark">
+              <div class="check-icon">
+                <span class="icon-line line-tip"></span>
+                <span class="icon-line line-long"></span>
+                <div class="icon-circle"></div>
+                <div class="icon-fix"></div>
+              </div>
+            </div>
+            <h4 class="modal-title" id="exampleModalLongTitle">Thank you!</h4>
+            <p>Thank you for your interest. The brochure will be delivered to your registered email address.</p>
+          </div>
+        </div>
+
+        <div class="main-btn-out mt-4 req-brochure-btn">
+          <button type="button" class="close-btn w-50" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- request brochure success message -->
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
+
+
+
+  <script>
+    const counters = document.querySelectorAll('.stat h2');
+    const stats = document.querySelectorAll('.stat');
+    const section = document.querySelector('#statsSection');
+
+    let hasAnimated = false;
+
+    // START COUNTER
+    function startCounter() {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+
+        const duration = 2000;
+        const increment = target / (duration / 16);
+
+        function update() {
+          count += increment;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count);
+            requestAnimationFrame(update);
+          } else {
+            counter.innerText = target + '+';
+          }
+        }
+
+        update();
+      });
+
+      stats.forEach(s => s.classList.add('active'));
+    }
+
+    // RESET COUNTER
+    function resetCounter() {
+      counters.forEach(counter => {
+        counter.innerText = "0";
+      });
+
+      stats.forEach(s => s.classList.remove('active'));
+    }
+
+    // OBSERVER
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (!hasAnimated) {
+            startCounter();
+            hasAnimated = true;
+          }
+        } else {
+          resetCounter();
+          hasAnimated = false;
+        }
+      });
+    }, {
+      threshold: 0.4
+    });
+
+    observer.observe(section);
+  </script>
+
+</body>
+
+</html>
