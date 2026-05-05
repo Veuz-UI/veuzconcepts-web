@@ -41,14 +41,58 @@
           <!-- header nav icons -->
             <div class="nav-desc-menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Veuz</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="products.html">Products</a></li>
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="about.html">Veuz</a></li>
+
+                  <li class="dropdown nav-menu-item">
+                    <a href="services.html" class="dropdown-toggle">Services</a>
+                    <ul class="mega-dropdown-menu">
+                      <div class="mega-label">All services</div>
+                      <div class="mega-cols">
+                        <a href="services-details.html">Mobile App Development</a>
+                        <a href="services-details.html">Website Development</a>
+                        <a href="services-details.html">Software Development</a>
+                        <a href="services-details.html">Aramco Cybersecurity Certificate</a>
+                        <a href="services-details.html">Odoo ERP</a>
+                        <a href="services-details.html">Endpoint Security</a>
+                        <a href="services-details.html">E-Invoicing</a>
+                        <a href="services-details.html">Microsoft 365 for Business</a>
+                        <a href="services-details.html">Google Workspace Services</a>
+                        <a href="services-details.html">Manage Engine</a>
+                      </div>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown nav-menu-item">
+                    <a href="services.html" class="dropdown-toggle">Products</a>
+                    <ul class="mega-dropdown-menu">
+                      <div class="mega-label">All products</div>
+                      <div class="mega-cols">
+                        <a href="products-details.html">Staff Hour</a>
+                        <a href="products-details.html">FlowDesq</a>
+                        <a href="products-details.html">Zatca E-Invoicing</a>
+                        <a href="products-details.html">Event Management Software</a>
+                        <a href="products-details.html">CRM Software</a>
+                        <a href="products-details.html">Booking Management</a>
+                        <a href="products-details.html">Touch2Scan</a>
+                        <a href="products-details.html">Venue Management</a>
+                        <a href="products-details.html">Study Abroad Software</a>
+                        <a href="products-details.html">Rental Management</a>
+                        <a href="products-details.html">Fleet Management Software</a>
+                        <a href="products-details.html">School Management System</a>
+                      </div>
+                    </ul>
+                  </li>
+
                   <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="blog.html">Insights</a></li>
-                  <li><a href="learn.html">Learn</a></li>
-                  <li><a href="contact.html" class="active">Contact Us</a></li>
+                  <li class="dropdown nav-menu-item">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                      <li class="submenu"><a href="blog.html">Blog</a></li>
+                      <li class="submenu"><a href="learn.html">Learn</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
           
@@ -64,11 +108,28 @@
               <div class="nav-container">
                 <nav class="menu">
                   <div class="menu__item">
-                    <a href="index.html" class="menu__item-link">Home</a>
+                    <a href="index.html" class="menu__item-link active">Home</a>
                   </div>
                   <div class="menu__item">
-                    <a href="#" class="menu__item-link">Veuz</a>
+                    <a href="about.html" class="menu__item-link">Veuz</a>
                   </div>
+
+                  <!-- DROPDOWN -->
+                  <div class="menu__item dropdown">
+                    <a href="#" class="menu__item-link dropdown-toggle">Services</a>
+                    <div class="dropdown-menu">
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">Services</a>
+                        <div class="submenu-menu">
+                          <a href="services-details.html">Services Details</a>
+                          <a href="services-details.html">Services Details</a>
+                          <a href="services-details.html">Services Details</a>
+                          <a href="services-details.html">Services Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="menu__item">
                     <a href="services.html" class="menu__item-link">Services</a>
                   </div>
@@ -76,7 +137,7 @@
                     <a href="products.html" class="menu__item-link">Products</a>
                   </div>
                   <div class="menu__item">
-                    <a href="portfolio.html" class="menu__item-link active">Portfolio</a>
+                    <a href="portfolio.html" class="menu__item-link">Portfolio</a>
                   </div>
                   <div class="menu__item">
                     <a href="blog.html" class="menu__item-link">Insights</a>
@@ -85,9 +146,9 @@
                     <a href="contact.html" class="menu__item-link">Contact Us</a>
                   </div>
                 </nav>
-                <div class="socials">
+
+                <!-- <div class="socials">
                   <div class="social-links">
-                      <!-- LinkedIn -->
                       <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                           <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke-width="2"/>
@@ -95,13 +156,11 @@
                           <circle cx="4" cy="4" r="2" stroke-width="2"/>
                         </svg>
                       </a>
-                      <!-- Twitter -->
                       <a href="#" target="_blank" class="social-link" aria-label="X">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                           <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7.1L4.4 22H1.2l8.1-9.2L1 2h7l4.9 6.5L18.9 2z"/>
                         </svg>
                       </a>
-                      <!-- Insta -->
                       <a href="#" target="_blank" class="social-link" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                           <rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2"/>
@@ -109,7 +168,6 @@
                           <circle cx="17.5" cy="6.5" r="1.5" stroke-width="2"/>
                         </svg>
                       </a>
-                      <!-- fb -->
                       <a href="#" target="_blank" class="social-link" aria-label="Facebook">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                           <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="2"
@@ -117,7 +175,8 @@
                         </svg>
                       </a>
                     </div>
-                </div>
+                </div> -->
+
               </div>
             </div>
           </div>
@@ -152,7 +211,7 @@
     <div class="contact-cards">
       <div class="row">
 
-        <div class="col-md-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
           <div class="get-in-touch-card">
             <div class="get-in-touch-card-header">
               <div class="get-in-touch-card-icon">
@@ -170,7 +229,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
           <div class="get-in-touch-card">
             <div class="get-in-touch-card-header">
               <div class="get-in-touch-card-icon">
@@ -187,7 +246,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
           <div class="get-in-touch-card">
             <div class="get-in-touch-card-header">
               <div class="get-in-touch-card-icon">
@@ -204,7 +263,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 mb-4">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 mb-4">
           <div class="get-in-touch-card">
             <div class="get-in-touch-card-header">
               <div class="get-in-touch-card-icon">
@@ -234,15 +293,14 @@
     <div class="contact-box">
 
       <div class="row justify-content-center align-items-center">
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="contact-img">
             <img src="assets/img/contact-image.webp" class="img-fluid" alt="">
           </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="contact-form">
-
             <span class="tag">Let’s Chat</span>
             <h3 class="main-heading mt-2 mb-0">Send a Message</h3>
             <p class="description">Fill out the form and our team will get back to you shortly.</p>
@@ -292,20 +350,18 @@
 </section>
 
 
-
-<section>
+<section class="section-padding pt-0 country-list-out">
   <div class="width-container">
-    <div class="country-section">
-
+    <div class="country-flag-out">
        <div class="row">
 
          <!-- Saudi Arabia -->
-        <div class="col-md-3">
-         <div class="card">
+        <div class="col-md-6 col-lg-3 my-2">
+         <div class="country-list">
            <div class="flag-wrap">
              <img class="flag-img" src="https://flagcdn.com/w80/sa.png" alt="Saudi Arabia flag" />
            </div>
-           <div class="card-head">
+           <div class="country-list-head">
              <div class="country-name">
                <div class="pin-icon">
                 <i class="fa-solid fa-location-dot"></i>
@@ -352,12 +408,12 @@
         </div>
 
          <!-- UAE -->
-        <div class="col-md-3">
-         <div class="card">
+        <div class="col-md-6 col-lg-3 my-2">
+         <div class="country-list">
            <div class="flag-wrap">
              <img class="flag-img" src="https://flagcdn.com/w80/ae.png" alt="UAE flag" />
            </div>
-           <div class="card-head">
+           <div class="country-list-head">
              <div class="country-name">
                <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="#1a6b3c" stroke-width="2.2"
                  stroke-linecap="round" stroke-linejoin="round">
@@ -394,12 +450,12 @@
         </div>
 
          <!-- Bahrain -->
-        <div class="col-md-3">
-         <div class="card">
+        <div class="col-md-6 col-lg-3 my-2">
+         <div class="country-list">
            <div class="flag-wrap">
              <img class="flag-img" src="https://flagcdn.com/w80/bh.png" alt="Bahrain flag" />
            </div>
-           <div class="card-head">
+           <div class="country-list-head">
              <div class="country-name">
                <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="#1a6b3c" stroke-width="2.2"
                  stroke-linecap="round" stroke-linejoin="round">
@@ -436,12 +492,12 @@
         </div>
 
          <!-- India -->
-        <div class="col-md-3">
-         <div class="card">
+        <div class="col-md-6 col-lg-3 my-2">
+         <div class="country-list">
            <div class="flag-wrap">
              <img class="flag-img" src="https://flagcdn.com/w80/in.png" alt="India flag" />
            </div>
-           <div class="card-head">
+           <div class="country-list-head">
              <div class="country-name">
                <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="#1a6b3c" stroke-width="2.2"
                  stroke-linecap="round" stroke-linejoin="round">
@@ -484,50 +540,57 @@
 </section>
 
 
+<section class="section-padding pt-0 technologies">
+  <div class="width-container">
+    <div class="technologies-in">
+      <div class="contact-tech-header">
+        <h5>We ensure value for our clients</h5>
+      </div>
+    </div>
 
+    <div class="technologies-list">
+      <div class="owl-carousel owl-theme technologies-slider">
 
-
-
-
-
-
-
-
-
-    <!-- Portfolio -->
-    <section class="section-padding pt-0 learn-section">
-      <div class="width-container">
-        <div class="learn-in">
-          <div class="row">
-
-            <div class="col-md-6 mt-4">
-              <div class="learn-card">
-                <div class="learn-img">
-                  <img src="assets/img/learn-01.webp" class="img-fluid" alt="">
-                </div>
-                <div class="learn-right">
-                  <p>Want to know about CRM?</p>
-                  <a href="crm.html" class="learn-btn">View <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 mt-4">
-              <div class="learn-card">
-                <div class="learn-img">
-                  <img src="assets/img/learn-02.webp" class="img-fluid" alt="">
-                </div>
-                <div class="learn-right">
-                  <p>Want to know about CRM?</p>
-                  <a href="crm.html" class="learn-btn">View <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                </div>
-              </div>
-            </div>
-
+        <div class="item">
+          <div class="technologies-item">
+            <img src="assets/img/technologies/00-1.png" class="img-fluid" alt="">
           </div>
         </div>
+
+        <div class="item">
+          <div class="technologies-item">
+            <img src="assets/img/technologies/00-2.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="technologies-item">
+            <img src="assets/img/technologies/00-3.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="technologies-item">
+            <img src="assets/img/technologies/00-4.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="technologies-item">
+            <img src="assets/img/technologies/00-5.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="technologies-item">
+            <img src="assets/img/technologies/00-6.png" class="img-fluid" alt="">
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 
     <!-- about section -->

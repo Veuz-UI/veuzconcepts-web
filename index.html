@@ -42,12 +42,56 @@
             <div class="nav-desc-menu">
                 <ul>
                   <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="#">Veuz</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">Veuz</a></li>
+
+                  <li class="dropdown nav-menu-item">
+                    <a href="services.html" class="dropdown-toggle">Services</a>
+                    <ul class="mega-dropdown-menu">
+                      <div class="mega-label">All services</div>
+                      <div class="mega-cols">
+                        <a href="services-details.html">Mobile App Development</a>
+                        <a href="services-details.html">Website Development</a>
+                        <a href="services-details.html">Software Development</a>
+                        <a href="services-details.html">Aramco Cybersecurity Certificate</a>
+                        <a href="services-details.html">Odoo ERP</a>
+                        <a href="services-details.html">Endpoint Security</a>
+                        <a href="services-details.html">E-Invoicing</a>
+                        <a href="services-details.html">Microsoft 365 for Business</a>
+                        <a href="services-details.html">Google Workspace Services</a>
+                        <a href="services-details.html">Manage Engine</a>
+                      </div>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown nav-menu-item">
+                    <a href="services.html" class="dropdown-toggle">Products</a>
+                    <ul class="mega-dropdown-menu">
+                      <div class="mega-label">All products</div>
+                      <div class="mega-cols">
+                        <a href="products-details.html">Staff Hour</a>
+                        <a href="products-details.html">FlowDesq</a>
+                        <a href="products-details.html">Zatca E-Invoicing</a>
+                        <a href="products-details.html">Event Management Software</a>
+                        <a href="products-details.html">CRM Software</a>
+                        <a href="products-details.html">Booking Management</a>
+                        <a href="products-details.html">Touch2Scan</a>
+                        <a href="products-details.html">Venue Management</a>
+                        <a href="products-details.html">Study Abroad Software</a>
+                        <a href="products-details.html">Rental Management</a>
+                        <a href="products-details.html">Fleet Management Software</a>
+                        <a href="products-details.html">School Management System</a>
+                      </div>
+                    </ul>
+                  </li>
+
                   <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="blog.html">Insights</a></li>
-                  <li><a href="learn.html">Learn</a></li>
+                  <li class="dropdown nav-menu-item">
+                    <a href="#" class="dropdown-toggle">Insights</a>
+                    <ul class="dropdown-menu">
+                      <li class="submenu"><a href="blog.html">Blog</a></li>
+                      <li class="submenu"><a href="learn.html">Learn</a></li>
+                    </ul>
+                  </li>
                   <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -67,8 +111,25 @@
                     <a href="index.html" class="menu__item-link active">Home</a>
                   </div>
                   <div class="menu__item">
-                    <a href="#" class="menu__item-link">Veuz</a>
+                    <a href="about.html" class="menu__item-link">Veuz</a>
                   </div>
+
+                  <!-- DROPDOWN -->
+                  <div class="menu__item dropdown">
+                    <a href="#" class="menu__item-link dropdown-toggle">Services</a>
+                    <div class="dropdown-menu">
+                      <div class="submenu">
+                        <a href="#" class="submenu-toggle">Services</a>
+                        <div class="submenu-menu">
+                          <a href="services-details.html">Services Details</a>
+                          <a href="services-details.html">Services Details</a>
+                          <a href="services-details.html">Services Details</a>
+                          <a href="services-details.html">Services Details</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="menu__item">
                     <a href="services.html" class="menu__item-link">Services</a>
                   </div>
@@ -85,9 +146,9 @@
                     <a href="contact.html" class="menu__item-link">Contact Us</a>
                   </div>
                 </nav>
-                <div class="socials">
+
+                <!-- <div class="socials">
                   <div class="social-links">
-                      <!-- LinkedIn -->
                       <a href="#" target="_blank" class="social-link" aria-label="LinkedIn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                           <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke-width="2"/>
@@ -95,13 +156,11 @@
                           <circle cx="4" cy="4" r="2" stroke-width="2"/>
                         </svg>
                       </a>
-                      <!-- Twitter -->
                       <a href="#" target="_blank" class="social-link" aria-label="X">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                           <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-7.1L4.4 22H1.2l8.1-9.2L1 2h7l4.9 6.5L18.9 2z"/>
                         </svg>
                       </a>
-                      <!-- Insta -->
                       <a href="#" target="_blank" class="social-link" aria-label="Instagram">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                           <rect x="2" y="2" width="20" height="20" rx="5" stroke-width="2"/>
@@ -109,7 +168,6 @@
                           <circle cx="17.5" cy="6.5" r="1.5" stroke-width="2"/>
                         </svg>
                       </a>
-                      <!-- fb -->
                       <a href="#" target="_blank" class="social-link" aria-label="Facebook">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                           <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="2"
@@ -117,7 +175,8 @@
                         </svg>
                       </a>
                     </div>
-                </div>
+                </div> -->
+
               </div>
             </div>
           </div>
@@ -129,14 +188,14 @@
 
 
     <!-- slider -->
-    <section class="slider-banner">
+    <section class="section-padding slider-banner">
       <div class="banner_slider">
           <div class="width-container">
             <div class="banner_slider-in">
               <div class="row">
                 <div class="col-lg-12 col-xl-6">
                   <div class="hero-banner">
-                    <h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                       The Best Software Development Company Delivering Custom IT Solutions
                     </h1>
                     <p class="subtitle">
@@ -150,11 +209,15 @@
                       enterprise, Veuz Concepts is here to meet your software development needs. Let's turn your 
                       concepts into success stories!
                     </p>
-                    <a href="login.html#signup"><button class="cta-button">Book a Free Consultation <i class="fa-solid fa-arrow-right"></i></button></a>
-                    <a href="#"><button class="view-more-btn">View More</button></a>
+                    <a href="login.html#signup" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                      <button class="cta-button">Book a Free Consultation <i class="fa-solid fa-arrow-right"></i></button>
+                    </a>
+                    <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                      <button class="view-more-btn">View More</button>
+                    </a>
                   </div>
 
-                  <div class="pt-4 client-section">
+                  <div class="pt-4 banner-client-section">
                     <div class="row">
                       <div class="col-lg-12 col-xl-4">
                         <div class="baner-client">
@@ -163,33 +226,33 @@
                       </div>
                       <div class="col-lg-12 col-xl-8">
                         <div class="right-banner-client">
-                          <div class="client-slider owl-carousel">
-                            <div class="client-card">
+                          <div class="banner-client-slider owl-carousel">
+                            <div class="banner-client-card">
                               <a href="">
                                 <img src="assets/img/aa1.png" class="img-fluid" alt="">
                               </a>
                             </div>
-                            <div class="client-card">
-                              <a href="">
-                                <img src="assets/img/aa2.png" class="img-fluid" alt="">
-                              </a>
-                            </div>
-                            <div class="client-card">
-                              <a href="">
-                                <img src="assets/img/aa3.png" class="img-fluid" alt="">
-                              </a>
-                            </div>
-                            <div class="client-card">
-                              <a href="">
-                                <img src="assets/img/aa4.png" class="img-fluid" alt="">
-                              </a>
-                            </div>
-                            <div class="client-card">
+                            <div class="banner-client-card">
                               <a href="">
                                 <img src="assets/img/aa5.png" class="img-fluid" alt="">
                               </a>
                             </div>
-                            <div class="client-card">
+                            <div class="banner-client-card">
+                              <a href="">
+                                <img src="assets/img/aa3.png" class="img-fluid" alt="">
+                              </a>
+                            </div>
+                            <div class="banner-client-card">
+                              <a href="">
+                                <img src="assets/img/aa4.png" class="img-fluid" alt="">
+                              </a>
+                            </div>
+                            <div class="banner-client-card">
+                              <a href="">
+                                <img src="assets/img/aa5.png" class="img-fluid" alt="">
+                              </a>
+                            </div>
+                            <div class="banner-client-card">
                               <a href="">
                                 <img src="assets/img/aa6.png" class="img-fluid" alt="">
                               </a>
@@ -203,8 +266,112 @@
                 </div>
 
                 <div class="col-lg-12 col-xl-6">
-                  <div class="banner-img">
-                    <img src="assets/img/banner-img.webp" class="img-fluid" alt="">
+                  <div class="right-banner">
+ 
+                      <!-- TOP ROW -->
+                      <div class="right-banner-blob">
+                    
+                        <!-- Blob -->
+                        <div class="blob-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                          <div class="blob-icon">
+                            <svg width="50" height="50" viewBox="0 0 28 24" fill="none">
+                              <polyline points="2,20 8,12 13,16 20,6 26,2" stroke="#6cd96c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                              <polyline points="20,2 26,2 26,8" stroke="#6cd96c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                          </div>
+                          <div class="blob-shape"></div>
+                        </div>
+                    
+                        <!-- Stats card -->
+                        <div class="stats-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                          <div class="counter-display">
+                            <span id="counter">0</span>+
+                          </div>
+                          <p class="stats-desc">
+                            some big companies that<br>we work with, and trust<br>us very much
+                          </p>
+                          <div class="progress-wrap">
+                            <div class="progress-fill" id="progress-fill"></div>
+                          </div>
+                        </div>
+                    
+                      </div>
+                    
+                      <!-- TESTIMONIAL -->
+                      <div class="banner-testimonial" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    
+                        <!-- Quote icon -->
+                        <div class="quote-icon">
+                          <svg width="55" height="45" viewBox="0 0 44 36" fill="none">
+                            <path d="M0 22C0 10.5 5 3 14 0l2 3C10 5.5 7.5 10 7 16h7v20H0V22z" fill="#d0d0d0"/>
+                            <path d="M24 22C24 10.5 29 3 38 0l2 3C34 5.5 31.5 10 31 16h7v20H24V22z" fill="#d0d0d0"/>
+                          </svg>
+                        </div>
+                    
+                        <!-- Active slide display -->
+                        <div class="slide-wrap" id="slide-wrap">
+                          <p class="testimonial-text" id="testimonial-text"></p>
+                          <p class="testimonial-author" id="testimonial-author"></p>
+                        </div>
+                    
+                        <!-- Static slide source (hidden) — edit content here -->
+                        <div id="slides" style="display:none;">
+                          <div class="slide">
+                            <p class="testimonial-text">The final product exceeded my expectations. Impressed with the results!</p>
+                            <p class="testimonial-author">Alex M. — Product Lead</p>
+                          </div>
+                          <div class="slide">
+                            <p class="testimonial-text">Working with this team transformed our brand. Delivery was fast and flawless.</p>
+                            <p class="testimonial-author">Sarah K. — Marketing Director</p>
+                          </div>
+                          <div class="slide">
+                            <p class="testimonial-text">Incredible attention to detail. Our revenue grew 3x after the redesign.</p>
+                            <p class="testimonial-author">James R. — CEO, TechCorp</p>
+                          </div>
+                          <div class="slide">
+                            <p class="testimonial-text">Best investment we made this year. Highly recommend to any growing company.</p>
+                            <p class="testimonial-author">Nina T. — Founder</p>
+                          </div>
+                        </div>
+                    
+                        <!-- Bottom row -->
+                        <div class="bottom-row">
+                    
+                          <!-- Avatars -->
+                          <div class="avatar-stack">
+                            <div class="avatar av1">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="9" r="4" fill="rgba(255,255,255,0.4)"/>
+                                <path d="M4 22c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="rgba(255,255,255,0.25)"/>
+                              </svg>
+                            </div>
+                            <div class="avatar av2">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="9" r="4" fill="rgba(255,255,255,0.4)"/>
+                                <path d="M4 22c0-4.4 3.6-8 8-8s8 3.6 8 8" fill="rgba(255,255,255,0.25)"/>
+                              </svg>
+                            </div>
+                            <div class="avatar av3">NT</div>
+                          </div>
+                    
+                          <!-- Dots + Arrows -->
+                          <div class="controls">
+                            <div id="dots"></div>
+                            <button class="arrow-btn" onclick="changeSlide(-1)">
+                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M9 2L4 7l5 5" stroke="#555" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </button>
+                            <button class="arrow-btn" onclick="changeSlide(1)">
+                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M5 2l5 5-5 5" stroke="#555" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </button>
+                          </div>
+                    
+                        </div>
+                      </div>
+
                   </div>
                 </div>
 
@@ -218,7 +385,7 @@
     <!-- about section -->
     <section class="section-padding pt-0 about-section">
       <div class="width-container">
-        <div class="about-card">
+        <div class="about-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           <div class="row">
             <div class="col-lg-9">
               <p class="tag">01 / About</p>
@@ -276,7 +443,7 @@
         <div class="services-list">
           <div class="row">
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <div class="services-list-item">
                 <div class="row">
                   <div class="col-lg-9">
@@ -297,7 +464,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
               <div class="services-list-item">
                 <div class="row">
                   <div class="col-lg-9">
@@ -318,7 +485,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
               <div class="services-list-item">
                 <div class="row">
                   <div class="col-lg-9">
@@ -405,7 +572,7 @@
       </div>
     </section>
 
-
+    <!-- solutions -->
     <section class="section-padding pb-0 solutions">
       <div class="width-container">
 
@@ -436,7 +603,7 @@
 
         <div class="solutions-content">
           <div class="row">
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <div class="left-solutions-in">
                 <div class="left-solutions-content">
                   <img src="assets/img/left-solution.webp" class="img-fluid" alt="">
@@ -468,7 +635,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
               <div class="right-solutions-in">
                 <div class="right-solutions-content">
                   <img src="assets/img/right-solution.webp" class="img-fluid" alt="">
@@ -511,16 +678,14 @@
 
         <div class="why-us-in">
           <div class="row">
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <div class="left-why-us">
                 <img src="assets/img/why-us.webp" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
               <div class="right-why-us">
                 <h3 class="main-heading"> Why Us? </h3>
-                
-                
                 <div class="right-why-us-item">
                   <div class="right-why-us-item-icon">
                     <i class="fa-solid fa-bag-shopping"></i>
@@ -627,7 +792,7 @@
     </div>
   </section>
 
- 
+ <!-- blogs -->
   <section class="section-padding pb-0 blogs">
     <div class="width-container">
       <div class="blog-in">
@@ -661,7 +826,7 @@
         <div class="blogs-list">
           <div class="row">
 
-            <div class="col-md-4 mt-4">
+            <div class="col-md-4 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <div class="card-stats">
                 <div>
                   <div class="stat-number">
@@ -679,7 +844,7 @@
               </div>
             </div>
 
-            <div class="col-md-8 mt-4">
+            <div class="col-md-8 mt-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
               <div class="card-video">
                 <span class="card-video-title">How We Work</span>
 
@@ -696,10 +861,10 @@
     </div>
   </section>
 
-
+      <!-- faq-sec -->
       <section class="section-padding faq-sec">
         <div class="width-container">
-          <div class="all-faq-in">
+          <div class="all-faq-in" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="row">
               <div class="col-lg-12 col-xl-4 left-faq">
                 <div class="left-faq-in">
@@ -1106,6 +1271,65 @@
   </script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    const slides = document.querySelectorAll('#slides .slide');
+    let current = 0;
+    let autoTimer;
+
+    function buildDots() {
+      const container = document.getElementById('dots');
+      container.innerHTML = '';
+      slides.forEach((_, i) => {
+        const d = document.createElement('div');
+        d.className = 'dot' + (i === current ? ' active' : '');
+        d.style.width = i === current ? '18px' : '7px';
+        d.onclick = () => goTo(i);
+        container.appendChild(d);
+      });
+    }
+
+    function goTo(index) {
+      const wrap = document.getElementById('slide-wrap');
+      wrap.style.opacity = '0';
+      wrap.style.transform = 'translateY(8px)';
+      setTimeout(() => {
+        current = (index + slides.length) % slides.length;
+        document.getElementById('testimonial-text').textContent = slides[current].querySelector('.testimonial-text').textContent;
+        document.getElementById('testimonial-author').textContent = slides[current].querySelector('.testimonial-author').textContent;
+        buildDots();
+        wrap.style.opacity = '1';
+        wrap.style.transform = 'translateY(0)';
+      }, 320);
+      clearInterval(autoTimer);
+      autoTimer = setInterval(() => changeSlide(1), 4000);
+    }
+
+    function changeSlide(dir) { goTo(current + dir); }
+
+    // Init — read first slide from DOM
+    document.getElementById('testimonial-text').textContent = slides[0].querySelector('.testimonial-text').textContent;
+    document.getElementById('testimonial-author').textContent = slides[0].querySelector('.testimonial-author').textContent;
+    buildDots();
+    autoTimer = setInterval(() => changeSlide(1), 4000);
+
+    // Animated counter
+    const target = 130;
+    const duration = 1800;
+    const start = performance.now();
+    function tick(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      document.getElementById('counter').textContent = Math.round(ease * target);
+      document.getElementById('progress-fill').style.width = (ease * 60) + '%';
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+
+  });
+</script>
 
 </body>
 
