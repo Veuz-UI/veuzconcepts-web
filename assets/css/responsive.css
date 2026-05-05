@@ -317,8 +317,11 @@
 }
 
 @media (max-width: 600px) {
+	header.fixed-to-top .main-header-in{
+		padding: 0;
+	}
 	.header-img {
-		width: 100px;
+		width: 80px;
 	}
 	.menu a {
         font-size: 18px;

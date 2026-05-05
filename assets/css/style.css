@@ -976,10 +976,6 @@ header.fixed-to-top .main-header-in{
 }
 /* END certificates */
 
-@media (min-width: 640px) {
-}
-@media (min-width: 960px) {
-}
 @media (max-width: 600px) {
   .copyright-box {
     display: block;
@@ -991,7 +987,7 @@ header.fixed-to-top .main-header-in{
 }
 @media (max-width: 400px) {
   .cert-card {
-    width: 100%;
+    width: 46%;
   }
 }
 /*---END footer---*/
@@ -2324,30 +2320,31 @@ header.fixed-to-top .main-header-in{
 .inner-about-section-image{
     border-radius: 20px;
     overflow: hidden;
-    height: 400px;
 }
 
 .inner-about-section-image img{
     object-fit: cover;
+    height: 400px;
 }
 
 .stats-section {
-  padding: 60px 0px;
   background: #e9ecef;
 }
 
 
-.stats {
+/* .stats-section .stats {
   margin-bottom: 50px;
   text-align: center;
-}
+} */
 
-.stat {
+.stats-section .stat {
   padding: 20px 10px;
+  text-align: center;
   transition: 0.3s ease;
+  word-break: break-all;
 }
 
-.stat h2 {
+.stats-section .stat h2 {
   font-size: 36px;
   font-weight: 700;
   margin: 0;
@@ -2355,45 +2352,41 @@ header.fixed-to-top .main-header-in{
   transition: all 0.4s ease;
 }
 
-.stat p {
+.stats-section .stat p {
   font-size: 12px;
   letter-spacing: 1.5px;
   color: #666;
   margin-top: 5px;
+  word-break: break-all;
 }
 
-
-.stat.active h2 {
+.stats-section .stat.active h2 {
   transform: scale(1.15);
   color: #0d2d26;
 }
 
 
-.stat:hover h2 {
+.stats-section .stat:hover h2 {
   transform: scale(1.1);
 }
 
-.stats .col-lg-3 {
+/* .stats .col-lg-3 {
   text-align: center;
-}
+} */
 
 @media (max-width: 992px) {
-  .stat h2 {
+  .stats-section .stat h2 {
     font-size: 30px;
   }
 }
 
 @media (max-width: 576px) {
-  .stat {
-    padding: 15px 0;
-  }
-
-  .stat h2 {
+  .stats-section .stat h2 {
     font-size: 26px;
   }
 
-  .stat p {
-    font-size: 11px;
+  .stats-section .stat p {
+    font-size: 12px;
   }
 }
 
@@ -2487,11 +2480,14 @@ header.fixed-to-top .main-header-in{
   .about-card-item div {
     font-size: 12px;
   }
+
+  .inner-about-section-image img{
+    height: 250px;
+  }
 }
 
 /* Values Section */
 .values-section {
-  padding: 60px 0px;
   background: #eef1ef;
 }
 
@@ -2583,12 +2579,12 @@ header.fixed-to-top .main-header-in{
 /* Client Section */
 .client-section {
   background: #eef1ef;
-  padding: 50px 20px;
   text-align: center;
 }
 
 .client-title {
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: 2px;
   color: #444;
   margin-bottom: 30px;
